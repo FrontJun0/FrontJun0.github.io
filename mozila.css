@@ -1,0 +1,373 @@
+@-moz-document url-prefix()
+{
+    @font-face {
+        font-family: 'Roboto';
+        src: url(fonts/Roboto/Roboto-Black.ttf);
+    }
+    * {
+        box-sizing: border-box;
+    }
+    html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li{
+                    
+        margin: 0;
+        padding: 0;
+    }
+    #first{
+        background-image: url(fotos/body-fon.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .container{
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav{
+        display: flex;
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .nav li{
+        margin-left: 70px;
+    }
+    .nav li a{
+        text-decoration: none;
+        color: black;
+        padding: 15px 25px;
+    }
+    .nav li a:hover{
+        color: aquamarine;
+        background-color: orange;
+        border-radius: 15px;
+    }
+    #main{
+        display: flex;
+        justify-content: flex-start;
+        font-family: 'Brygada 1918';
+    }
+    .main-container{
+        display: flex-column;
+        text-align: center;
+        margin-top: 60px;
+        margin-left: 70px;
+        align-items: center;
+    }
+    .title{
+        margin-bottom: 40px;
+        font-size: 50px;
+    }
+    h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .foto-baimak{
+       background-image: url(fotos/image-main.jpg);
+       width: 800px;
+       height: 250px;
+       margin: 60px auto;
+       border: 1px solid black;
+       border-radius: 15px;
+    }
+    #second{
+        background-image: url(fotos/body2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 270vh;
+        font-family: 'Brygada 1918';
+        text-align: center;
+        padding-top: 70px;
+    }
+    .title2{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .slider-container{
+        height: 482px;
+        width: 779px;
+        margin: 50px auto 0 auto;
+        overflow: hidden;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+    #slider-line{
+        height: 482px;
+        width: 779px;
+        display:flex;
+        position:relative;
+        left: 0;
+        transition: all ease 1s;
+    }
+    .buttons-container{
+        width: 125px;
+        height: 50px;
+        display:flex;
+        flex-direction: row;
+        margin: 10px auto 30px auto
+        
+    }
+    .slider-button-pr{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 60%;
+        background-image: url(fotos/previous.png);
+    }
+    .slider-button{
+        width: 50px;
+        height: 50px;
+        margin-left: 25px;
+        border: 1px solid black;
+        border-radius: 60%;
+        background-image: url(fotos/next.png);
+    }
+    .heroes{
+        text-align: center;
+    }
+    
+    .heroes-container{
+        width: 800px;
+        height: 600px;
+        margin: 100px auto 0px auto;
+        display: grid;
+        border: 2px solid black;
+        border-radius: 15px;
+        grid-template-areas: "art bel"
+                             "min kop"
+                             "kud pim";
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 200px 200px 200px;
+        background-color: aqua;
+    }
+    .art{
+        grid-area: art;
+    }
+    
+    .bel{
+        grid-area: bel;
+    }
+    
+    .min{
+        grid-area: min; 
+    }
+    
+    .kop{
+        grid-area: kop; 
+    }
+    
+    .kud{
+        grid-area: kud; 
+    }
+    
+    .pim{
+        grid-area: pim; 
+    }
+    
+    .block1{
+        height: 200px;
+        border: 2px solid black;
+        display:flex;
+        flex-direction: row;
+        width: 800px;
+    }
+    
+    #foto1{
+        width: 106px;
+        height: 160px;
+        margin: 10px 145px 10px 145px;
+        background-image: url(fotos/artamonov.jpg);
+    }
+    
+    #art_p1{
+        font-style: italic;
+        font-family: Brygada 1918;
+        font-weight: 600;
+        margin: 0 auto;
+    }
+    #art_p2{
+        margin: 0 auto;
+        font-style: italic;
+        font-family: Brygada 1918;
+        font-weight: 600
+    }
+    #foto2{
+        width: 106px;
+        height: 160px;
+        margin: 10px 145px 10px 145px;
+        background-image: url(fotos/bel.jpg);
+    }
+    #foto3{
+        width: 106px;
+        height: 160px;
+        margin: 10px 145px 10px 145px;
+        background-image: url(fotos/min.jpg);
+    }
+    #art_p3{
+        margin: 0 auto;
+        font-style: italic;
+        font-family: Brygada 1918;
+        font-weight: 600
+    }
+    #foto4{
+        width: 106px;
+        height: 160px;
+        margin: 10px 145px 10px 145px;
+        background-image: url(fotos/kop.jpg);
+    }
+    #art_p4{
+        margin-left: 0 auto;
+        font-style: italic;
+        font-family: Brygada 1918;
+        font-weight: 600
+    }
+    #foto5{
+        width: 106px;
+        height: 160px;
+        margin: 10px 145px 10px 145px;
+        background-image: url(fotos/kud.jpg);
+    }
+    #art_p5{
+        margin: 0 auto;
+        font-style: italic;
+        font-family: Brygada 1918;
+        font-weight: 600
+    }
+    #foto6{
+        width: 106px;
+        height: 160px;
+        margin: 10px 145px 10px 145px;
+        background-image: url(fotos/pim.jpg);
+    }
+    #art_p6{
+        margin: 0 auto;
+        font-style: italic;
+        font-family: Brygada 1918;
+        font-weight: 600
+    }
+    .alibaev-container{
+        margin: 70px auto 0 auto;
+        width: 250px;
+        height: 250px;
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: aqua;
+    }
+    .alibaev{
+        margin: 0px auto;
+        width: 150px;
+        height: 200px;
+        background-image: url(fotos/alibaev.jpg);
+    }
+    .ali{
+        margin-top: 10px;
+        font-style: italic;
+        font-family: Brygada 1918;
+        font-weight: 600
+    }
+    #third {
+        background-image: url(fotos/body2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        font-family: 'Brygada 1918';
+        padding-top: 50px;
+        text-align: center;
+    }
+    #third p {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+    .side-text {
+        border: 2px solid black;
+        background-color: aqua;
+        height: 100px;
+        font-size: 5px;
+    }
+    .title3 {
+        font-size: 30px;
+    }
+    .video-container {
+        height: 450px;
+        width: 700px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    .video-line{
+        height: 450px;
+        width: 700px;
+        display:flex;
+        position:relative;
+        left: 0;
+        transition: all ease 1s;
+    }
+    #articles {
+        background-image: url(fotos/body2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 420vh;
+        font-family: 'Brygada 1918';
+        padding: 50px 100px 0 100px;
+        text-align: center;
+    }
+    .article1 {
+        text-align: left;
+        background-color: aliceblue;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+    .media {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .img-responsive{
+        display:block;
+        height: 400px;
+        max-width: 200px;
+        margin-right: 200px;
+    }
+    .svecha {
+        display:block;
+        height: 400px;
+        max-width: 200px;
+        margin-right: 200px;
+    }
+    article h2 {
+        margin-top: 20px;
+    }
+    h4 {margin: 10px 0;}
+    article p {
+        margin-bottom: 7px;
+    }
+    #footer {
+        border: 2px solid black;
+        background-color: black;
+        border-radius: 15px;
+        height: 94px;
+    }
+    .footer-container{
+        width: 1000px;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        align-items: center;
+        color: aliceblue;
+    }
+    .copy {color: aliceblue;}
+    .hover:hover{background-color: aqua;}
+
+}
+
+
+
+
