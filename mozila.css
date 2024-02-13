@@ -4,6 +4,11 @@
         font-family: 'Roboto';
         src: url(fonts/Roboto/Roboto-Black.ttf);
     }
+    @media (prefers-reduced-motion: no-preference) {
+        :root {
+            scroll-behavior: smooth;
+        }
+    }
     * {
         box-sizing: border-box;
     }
